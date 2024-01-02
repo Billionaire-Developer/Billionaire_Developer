@@ -36,7 +36,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 290px;
+    padding-top: 220px;
     margin-bottom: 10px;
 }
 span{
@@ -52,4 +52,17 @@ span :hover{
     font-size: 24px;
     font-weight: 200;
     padding-left: 500px;
+}
+.social-links{
+    margin-top: 50px;
+    margin-left: 650px;
+}
+.social-links a{
+    height: 90px;
+    width: 90px;
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgba(255, 210, 253);
+    border-radius: 50%;
+    font-size: 40px;
 }
