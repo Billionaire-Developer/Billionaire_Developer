@@ -1,11 +1,11 @@
-
-
+/*Changed background images like four times, trying to get the one that sooths*/
 body{
     margin: 0;
     padding: 0;  
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Images/background.jpg);
+    background-image: url("../Images/Bk.jpg"), url("../Images/background.jpg");
     height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat repeat;
 }
 header{
     height: 100vh;
@@ -35,13 +35,23 @@ header{
 
 #main h1{
     color: white;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 800;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 220px;
     margin-bottom: 10px;
+}
+.cover img{
+    float: right;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border-style:groove;
+    border-bottom: 4px solid rgb(255, 255, 255);
+    z-index: 1;
+    position: relative;
 }
 
 span{
@@ -54,7 +64,7 @@ span :hover{
 }
  #main p{
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 200;
     padding-left: 500px;
 }
@@ -71,8 +81,9 @@ span :hover{
     border-radius: 50%;
     font-size: 40px;
 }
+/*Styling the About section differently*/
 .About{
-    background:rgb(26, 25, 25);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/About.me.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -105,7 +116,7 @@ h2{
     content: "";
 }
 #Projects{
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../Images/Proj.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/About.me.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -140,6 +151,7 @@ h2{
     flex-wrap: wrap;
     color: white;
     transition: transform .5sec;
+   
 }
 .Project_column{
     flex-basis: 28%;
@@ -148,6 +160,10 @@ h2{
     border-radius: 5px;
     box-shadow: 0 10px 20px 3px white;
     cursor: pointer;
+    animation-name: flow;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
 }
 .Project_column p{
     font-size: 20px;
