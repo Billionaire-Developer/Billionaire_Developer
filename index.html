@@ -8,12 +8,13 @@
     <script src="https://kit.fontawesome.com/05b34eed80.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!--The header file contains details of the cover/landing page-->
     <header>
         <div class="Menu">
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-users"></i>About</a></li>
-                <li><a href="#"><i class="fa-solid fa-code"></i>Projects</a></li>
+                <li><a href="#Home" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#About"><i class="fa-solid fa-users"></i>About</a></li>
+                <li><a href="#projects"><i class="fa-solid fa-code"></i>Projects</a></li>
                 <li><a href="#"><i class="fa-solid fa-briefcase"></i>Skill</a></li>
                 <li><a href="https://drive.google.com/file/d/152L0jdopj9ETT0nLa5POxidpZZNu7N5f/view?usp=sharing" target="_blank"><i class="fa-regular fa-file"></i>Resume/CV</a></li>
             </ul>
@@ -33,7 +34,7 @@
         </section>
     </header>
     <!--What you should know about Billionaire Developer-->
-    <div class="About">
+    <section id="About">
         <h2><img src="Images/logo.png.jpg" alt="Profile"></h2>
         <div class="About.Me">
             <p>I am a highly accomplished, skilled and knowledgeable computer science graduate <br>
@@ -53,34 +54,89 @@
             hackathons and learn new things. There is nothing better than learning something new<br>
              or having a good laugh before going to bed.&#128526;</p>
         </div>
-    </div>
+    </section>
     <!--List of projects i have worked on and currently working on-->
     <section id="Projects">
         <div class="Title-text">
-            <h1>My Projects</h1>
+            <h2>My Projects</h2>
         </div>
         <div class="Project_row">
             <div class="Project_column">
-                <div class="user">
-                    <img src="Images/logo.png.jpg" alt="">
-                    <div class="user-info">
-                        <h4>USER<i class="fa-brands fa-github"></i></h4>
-                        <small>@lawanijeremiah23</small>
-                    </div>
+                <img src="Images/Ecommerce.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>E-commerce</h3>
+                    <hr>
+                    <p>I developed an Online marketplace where products or services are provided by multiple third parties..</p>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci maiores possimus magni eligendi suscipit ab aspernatur cum, quos odit na</p>
             </div>
             <div class="Project_column">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci maiores possimus magni eligendi suscipit ab aspernatur cum, quos odit na</p>
+                <img src="Images/fintech.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Fintech</h3>
+                    <hr>
+                    <p>Built software, mobile applications, and other technologies created to improve and automate traditional forms of finance for businesses and consumers alike.</p>
+                </div>
             </div>
             <div class="Project_column">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci maiores possimus magni eligendi suscipit ab aspernatur cum, quos odit na</p>
+                <img src="Images/web3.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Web3</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim doloribus est laboriosam.</p>
+                </div>
+            </div>
+            <div class="Project_column">
+                <img src="Images/Engineeering.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>E-commerce</h3>
+                    <hr>
+                    <p></p>
+                </div>
             </div>
         </div>
+    </section>
+    <!--This page contains the list of skills i currently possess-->
+    <section id="skill">
+        <ul>
+            <li><a href="#">SKILL</a></li>
+            <ul>
+                <li><a href="#">FRONTEND LANGUAGES</a></li>
+                <ul>
+                    <li><a href="#">BACKEND LANGUAGES</a></li>
+                </ul>
+            </ul>
+        </ul>
+        <ul>
+            <li><a href="#">HTML</a></li>
+        </ul>
     </section>
 
 
 
-    <script src="index.js"></script>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-heading">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ly36kn0ug4k?si=d4uG4F8oSPyQkAeB"
+             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; allowfullscreen></iframe>
+        </div>
+        <div class="footer-link">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

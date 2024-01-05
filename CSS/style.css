@@ -3,15 +3,15 @@ body{
     margin: 0;
     padding: 0;  
     background-image: url("../Images/Bk.jpg"), url("../Images/background.jpg");
-    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat repeat;
+    
 }
 header{
-    height: 100vh;
+    height: 100px;
+    min-height: 100%;
     background-size: cover;
     background-position: center;
-    min-height: 100px;
 }
 .Menu ul{
     position: relative;
@@ -28,6 +28,10 @@ header{
     line-height: 24px;
     font-weight: 800;
     text-decoration: none;
+    transition: .3s;
+}
+.Menu a.active{
+    color: red;
 }
 .Menu ul li a:hover{
     color: red;
@@ -82,20 +86,22 @@ span :hover{
     font-size: 40px;
 }
 /*Styling the About section differently*/
-.About{
+
+#About{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/About.me.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
     min-height: 100px;
+    padding: 70px 0;
 }
-.About p{
+#About p{
     color: white;
     font-size: 22px;
     font-weight: 200;
     padding-left: 500px;
 }
-.About img{
+#About img{
     float: left;
     width: 10rem;
     height: 10rem;
@@ -115,74 +121,129 @@ h2{
     height: ;
     content: "";
 }
+
+/*Here is my styling for the Projects section*/
+
 #Projects{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/About.me.jpg);
-    height: 100vh;
+    width: 100%;
+    padding: 70px 0;
     background-size: cover;
     background-position: center;
 }
-.Title-text h1{
-    color: white;
-    margin: auto;
-    font-size: 20px;
-    color: #009688;
-    font-weight: bold;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-}
-.Title-text h1 ::after{
-    content: "";
-    width: 50px;
-    height: 35px;
-    background: linear-gradient(#0195587, #fff);
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: -1;
+.Title-text h2{
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: rgb(11, 92, 63);
+    text-decoration: wavy;
+    
 }
 .Project_row{
-    width: 80%;
-    margin-top: 40px;
-    margin: auto;
+    width: 60%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
-    color: white;
-    transition: transform .5sec;
+    justify-content: space-around;
+    margin: auto;
    
 }
 .Project_column{
-    flex-basis: 28%;
-    padding: 10px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 0 10px 20px 3px white;
-    cursor: pointer;
-    animation-name: flow;
-    animation-duration: 4s;
-    animation-delay: 2s;
-    animation-iteration-count: 3;
-}
-.Project_column p{
-    font-size: 20px;
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 10px;
     color: white;
+    position: relative;
 }
-.user{
+.Project_column img{
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5), #009688);
+    opacity: 0;
+    transition: 1s;
+}
+.Project_column:hover .overlay{
+    opacity: 1;
+}
+.service-desc{
+    width: 80%;
+    position: absolute;
+    opacity: 0;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+    background: white;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.service-desc p{
+    font-size: 18px;
+}
+.Project_column:hover .service-desc{
+    bottom: 40%;
+    opacity: 1;
+}
+
+/*Here is my styling for the Skill set section*/
+
+
+
+
+
+
+
+
+
+
+/*Here is my styling for the footer section*/
+footer{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+.footer-link{
+    margin-bottom: 40px;
+}
+.footer-link ul{
+    position: relative;
     display: flex;
-    align-items: center;
-    margin: 20px 0;
 }
-.user img{
-    width: 70px;
-    margin-right: 20px;
-    border-radius: 3px;
+.footer-link ul li{
 
 }
-.Project_row :hover{
-    transform: translateY(-7px);
+.footer-link ul li a{
+    color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 600px) {
     
 }
