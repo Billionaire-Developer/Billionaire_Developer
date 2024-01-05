@@ -8,10 +8,18 @@ body{
     
 }
 header{
-    height: 100px;
+    background-image: url("../Images/Bk.jpg"), url("../Images/background.jpg");
+    width: 100%;
+    height: 100vh;
     min-height: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: center;
+    min-height: 100px;
+}
+
+section:nth-child(odd) {
+    background: rgb(127, 127, 127);
 }
 .Menu ul{
     position: relative;
@@ -37,7 +45,7 @@ header{
     color: red;
 }
 
-#main h1{
+.main h1{
     color: white;
     font-size: 70px;
     font-weight: 800;
@@ -66,7 +74,7 @@ span{
 span :hover{
     color: white;
 }
- #main p{
+ .main p{
     color: white;
     font-size: 22px;
     font-weight: 200;
