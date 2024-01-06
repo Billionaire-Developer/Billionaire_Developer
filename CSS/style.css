@@ -5,21 +5,16 @@ body{
     background-image: url("../Images/Bk.jpg"), url("../Images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat repeat;
+    box-sizing: border-box;
     
 }
 header{
     background-image: url("../Images/Bk.jpg"), url("../Images/background.jpg");
     width: 100%;
     height: 100vh;
-    min-height: 100%;
-    height: 100vh;
     background-size: cover;
     background-position: center;
     min-height: 100px;
-}
-
-section:nth-child(odd) {
-    background: rgb(127, 127, 127);
 }
 .Menu ul{
     position: relative;
@@ -98,10 +93,9 @@ span :hover{
 #About{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/About.me.jpg);
     height: 100vh;
-    background-size: cover;
-    background-position: center;
-    min-height: 100px;
-    padding: 70px 0;
+ 
+    padding: 70px 20px;
+    margin: auto;
 }
 #About p{
     color: white;
@@ -150,7 +144,7 @@ h2{
     
 }
 .Project_row{
-    width: 60%;
+    width: 55%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -168,6 +162,8 @@ h2{
 .Project_column img{
     width: 100%;
     border-radius: 7px;
+    filter: brightness(0.40);
+
 }
 .overlay{
     width: 100%;
@@ -208,9 +204,107 @@ hr{
 }
 
 /*Here is my styling for the Skill set section*/
+#skill{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/About.me.jpg);
+    width: 100%;
+    padding: 70px 0;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
 
-
-
+/*styling for my contact us*/
+#contact{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/About.me.jpg);
+    width: 100%;
+    padding: 70px 0;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.container{
+    width: 30%;
+    margin: 10px auto;
+}
+.contact-box{
+    background: #fff;
+    display: flex;
+    color: black;
+    width: 80%;
+    margin: 20px auto;
+}
+.contact-left{
+    flex-basis: 70%;
+    padding: 10px 70px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 10%;
+    background: #150d3d;
+    color: white;
+}
+.container h4{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #472bd5;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding-bottom: 8px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+}
+button{
+    width: 100px;
+    background: #1c00b5;
+    border: none;
+    outline: none;
+    color: white;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-left h5{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.contact-right h5{
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+tr td :first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+}
 
 
 
@@ -220,38 +314,77 @@ hr{
 
 /*Here is my styling for the footer section*/
 footer{
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    min-height: 100px;
+    background: #111;
 }
-.footer-link{
-    margin-bottom: 40px;
+#footer-container{
+    width: 100%;
+    padding: 70px 30px 20px;
 }
-.footer-link ul{
-    position: relative;
+.socialIcons{
     display: flex;
+    justify-content: center;
 }
-.footer-link ul li{
-
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
 }
-.footer-link ul li a{
+.socialIcons a i{
+    font-size: 2em;
+    color: rgb(177, 99, 99);
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+.socialIcons a i:hover{
+    color: red;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    text-align: center;
+}
+.footerBottom p{
     color: white;
 }
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 600px) {
-    
+@media (max-width: 700px){
+    .footerNav ul{
+         flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
 }
