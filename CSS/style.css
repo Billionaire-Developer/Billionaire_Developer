@@ -91,7 +91,7 @@ span :hover{
 /*Styling the About section differently*/
 
 #About{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/About.me.jpg);
+    
     height: 100vh;
  
     padding: 70px 20px;
@@ -127,7 +127,7 @@ h2{
 /*Here is my styling for the Projects section*/
 
 #Projects{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/About.me.jpg);
+    
     width: 100%;
     padding: 70px 0;
     background-size: cover;
@@ -146,7 +146,7 @@ h2{
 .Project_row{
     width: 55%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     margin: auto;
    
@@ -162,7 +162,7 @@ h2{
 .Project_column img{
     width: 100%;
     border-radius: 7px;
-    filter: brightness(0.40);
+    filter: brightness(0.60);
 
 }
 .overlay{
@@ -205,7 +205,7 @@ hr{
 
 /*Here is my styling for the Skill set section*/
 #skill{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/About.me.jpg);
+   
     width: 100%;
     padding: 70px 0;
     background-size: cover;
@@ -230,17 +230,17 @@ hr{
     background: #fff;
     display: flex;
     color: black;
-    width: 80%;
+    width: 60%;
     margin: 20px auto;
 }
 .contact-left{
     flex-basis: 70%;
-    padding: 10px 70px;
+    padding: 10px 20px;
 }
 .contact-right{
     flex-basis: 40%;
-    padding: 10%;
-    background: #150d3d;
+    padding: 10px;
+    background: rgb(8, 8, 120);
     color: white;
 }
 .container h4{
@@ -263,7 +263,7 @@ input{
     border: none;
     border-bottom: 1px solid black;
     outline: none;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
 }
 textarea{
     width: 100%;
@@ -273,9 +273,10 @@ textarea{
     box-sizing: border-box;
 }
 label{
-    margin-bottom: 6px;
+    font-size: 20px;
+    margin-bottom: 8px;
     display: block;
-    color: #1c00b5;
+    color: rgb(2, 2, 111);
 }
 button{
     width: 100px;
@@ -378,13 +379,17 @@ footer{
     margin: 0px 5px;
 }
 
-@media (max-width: 700px){
-    .footerNav ul{
-         flex-direction: column;
-    }
-    .footerNav ul li{
+@media screen and (max-width: 600px) {
+    header{
+        background-image: url("../Images/Bk.jpg"), url("../Images/background.jpg");
         width: 100%;
-        text-align: center;
-        margin: 10px;
+    }
+    .main h1{
+        color: white;
+        font-size: 40%;
+        font-weight: 200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
